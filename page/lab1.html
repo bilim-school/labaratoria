@@ -1,163 +1,184 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--=============== BOXICONS ===============-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
 
-        <!--=============== SWIPER CSS ===============--> 
-        <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-        <!--=============== CSS ===============--> 
-        <link rel="stylesheet" href="../assets/css/styles.css">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
 
-        <title>Биология. Зертханалық жұмыс</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                    <img src="../assets/img/logo.png" alt="" class="nav__logo-img">
-                    Биология
-                </a>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/styles.css">
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="../index.html" class="nav__link">Басты бет</a>
-                        </li>
+    <title>Биология. Зертханалық жұмыс</title>
+</head>
 
-                        <!-- <li class="nav__item">
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="../assets/img/logo.png" alt="" class="nav__logo-img">
+                Биология
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link">Басты бет</a>
+                    </li>
+
+                    <!-- <li class="nav__item">
                             <a href="latihan.html" class="nav__link">Latihan Soal</a>
                         </li> -->
 
-                        <a href="#" class="button button--ghost active-link">Зертханалық жұмыс 1</a>
-                    </ul>
+                    <a href="#" class="button button--ghost active-link">Зертханалық жұмыс 1</a>
+                </ul>
 
-                    <div class="nav__close" id="nav-close">
-                        <i class='bx bx-x'></i>
-                    </div>
-
-                    <img src="../assets/img/nav-img.png" alt="" class="nav__img">
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
                 </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-grid-alt'></i>
+                <img src="../assets/img/nav-img.png" alt="" class="nav__img">
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="main">
+
+
+
+        <!--==================== DISCOUNT ====================-->
+        <section class="section discount">
+            <div class="discount__container container grid">
+                <img src="" alt="" class="">
+                <div class="discount__data">
+                    <h2 class="discount__title">Редуцирленетін және редуцирленбейтін қанттарды анықтау<br></h2>
+                    <p>
+                        Редуцирленетін және редуцирленбейтін қанттардың сандық талдауы қандағы және зәрдегі<br>
+                        қанттың деңгейін анықтау үшін медициналық зертханаларда жүргізіледі. Фармецевтикалық<br>
+                        компанияларда дәрілік препараттарды өндіру және оларды сертификаттау кезінде; тамақ <br>
+                        өнеркәсібінде шикізат пен тамақ өнімдеріндегі қанттың концентрациясын анықтау үшін; <br>
+                        шарап жасауда және жеміс-көкөніс дақылдарын дайындау үдерісі кезінде жасалады.<br>
+                        «Редуцирленетін және редуцирленбейтін қанттарды қанттарды анықтау» атты зертханалық <br>
+                        жұмысын жүргізу үшін кестеніқарау керек, ол әдетте экспериментті бастамас бұрын толтырылады.
+                    </p>
+                </div>
+            </div>
+            <div><br></div>
+
+            <div class="discount__container_text container grid"
+                style="text-align: justify; text-justify: inter-caracter; padding: 35px;">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Практикалық жұмыс қадамдары</th>
+                                <th scope="col">Жоспарланатын іс-әрекет</th>
+                                <th scope="col">Толық мәлімет</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body"></tbody>
+                    </table>
                 </div>
 
-            </nav>
-        </header>
+                <script>
+                    const data = [
+                        { name: "Тақырыптың тұжырымдалуы", action: "Біз нені зерттейміз?", detail: "Редуцирленетін және редуцирленбейтін қанттардың тотықсыздандыру қабілеттері" },
+                        { name: "Гипотезаның тұжырымдалуы", action: "Біз қандай нәтиже ала аламыз?", detail: "Егер көмірсу өзінің тотықсыздандыру қабілетін көрсетсе, онда бұл – редуцирленетін қанттар." },
+                        { name: "Мақсаттың тұжырымдалуы", action: "Зерттеуді не үшін жүргіземіз?", detail: "Редуцирленетін және редуцирленбейтін қанттардың тотықсыздандыру қабілетін анықтау" },
+                        { name: "Зерттеу әдісін анықтау", action: "Бұны қалай (әдіспен) зерттейміз?", detail: "Бенедикт реакциясы" },
+                        { name: "Реактивтер мен жабдықтарды анықтау", action: "Экспериментті не арқылы жүргізе аламыз?", detail: "2 мл 10% глюкоза ерітіндісі, 4 мл 10% сахароза ерітіндісі, дистильденген су, NaOH ерітіндісі, HCl, лакмус қағазы, су моншасы, штатив, сынауық." },
+                        { name: "Жұмыс кезеңі", action: "Мақсатқа жету үшін қандай қадамдар жасау керек?", detail: "1. Редуцирленетін қантты және редуцирленбейтін қанттарды анықтау." },
+                        { name: "Нәтижелерді графикалық ұсыну тәсілдері", action: "Зерттеу нәтижелерін қалай ұсынамын/көрсетемін?", detail: "Нәтижелер кестесі, зерттелетін ерітінділердің түс өзгерісінің суреті." },
+                        { name: "Қорытындыларды тұжырымдау", action: "Зерттеу нәтижесімен не істеймін?", detail: "Нәтижелер редуцирленетін және редуцирленбейтін қанттардың тотықсыздандыру қабілетін түсіндіруге мүмкіндік береді." },
+                    ];
 
-        <main class="main">
+                    const tbody = document.getElementById("table-body");
 
-            
-        
-            <!--==================== DISCOUNT ====================-->
-            <section class="section discount">
-                <div class="discount__container container grid">
-                    <img src="" alt="" class="">
-                    <div class="discount__data">
-                        <h2 class="discount__title">Редуцирленетін және редуцирленбейтін қанттарды анықтау<br></h2>
-                        <p>
-                            Редуцирленетін және редуцирленбейтін қанттардың сандық талдауы қандағы және зәрдегі<br>
-                            қанттың деңгейін анықтау үшін медициналық зертханаларда жүргізіледі. Фармецевтикалық<br>
-                            компанияларда дәрілік препараттарды өндіру және оларды сертификаттау кезінде; тамақ <br>
-                            өнеркәсібінде шикізат пен тамақ өнімдеріндегі қанттың концентрациясын анықтау үшін; <br>
-                            шарап жасауда және жеміс-көкөніс дақылдарын дайындау үдерісі кезінде жасалады.<br>
-                            «Редуцирленетін және редуцирленбейтін қанттарды қанттарды анықтау» атты зертханалық <br>
-                            жұмысын жүргізу үшін кестеніқарау керек, ол әдетте экспериментті бастамас бұрын толтырылады.
-                        </p>
-                    </div>
-                </div>
-                <div><br></div>
-                
-                <div class="discount__container_text container grid" style="text-align: justify; text-justify: inter-caracter; padding: 35px;">
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Практикалық жұмыс қадамдары</th>
-                                    <th scope="col">Жоспарланатын іс-әрекет</th>
-                                    <th scope="col">Толық мәлімет</th>
-                                </tr>
-                            </thead>
-                            <tbody id="table-body"></tbody>
-                        </table>
-                    </div>
-                    
-                    <script>
-                        const data = [
-                            { name: "Тақырыптың тұжырымдалуы", action: "Біз нені зерттейміз?", detail: "Редуцирленетін және редуцирленбейтін қанттардың тотықсыздандыру қабілеттері" },
-                            {  name: "Гипотезаның тұжырымдалуы", action: "Біз қандай нәтиже ала аламыз?", detail: "Егер көмірсу өзінің тотықсыздандыру қабілетін көрсетсе, онда бұл – редуцирленетін қанттар." },
-                            {  name: "Мақсаттың тұжырымдалуы", action: "Зерттеуді не үшін жүргіземіз?", detail: "Редуцирленетін және редуцирленбейтін қанттардың тотықсыздандыру қабілетін анықтау" },
-                            {  name: "Зерттеу әдісін анықтау", action:"Бұны қалай (әдіспен) зерттейміз?", detail:"Бенедикт реакциясы" },
-                            {  name: "Реактивтер мен жабдықтарды анықтау", action:"Экспериментті не арқылы жүргізе аламыз?", detail:"2 мл 10% глюкоза ерітіндісі, 4 мл 10% сахароза ерітіндісі, дистильденген су, NaOH ерітіндісі, HCl, лакмус қағазы, су моншасы, штатив, сынауық." },
-                            {  name: "Жұмыс кезеңі", action:"Мақсатқа жету үшін қандай қадамдар жасау керек?", detail:"1. Редуцирленетін қантты және редуцирленбейтін қанттарды анықтау." },
-                            {  name: "Нәтижелерді графикалық ұсыну тәсілдері", action:"Зерттеу нәтижелерін қалай ұсынамын/көрсетемін?", detail:"Нәтижелер кестесі, зерттелетін ерітінділердің түс өзгерісінің суреті." },
-                            {  name: "Қорытындыларды тұжырымдау", action:"Зерттеу нәтижесімен не істеймін?", detail:"Нәтижелер редуцирленетін және редуцирленбейтін қанттардың тотықсыздандыру қабілетін түсіндіруге мүмкіндік береді." },
-                        ];
-                    
-                        const tbody = document.getElementById("table-body");
-                    
-                        data.forEach(row => {
-                            const tr = document.createElement("tr");
-                            tr.innerHTML = `
+                    data.forEach(row => {
+                        const tr = document.createElement("tr");
+                        tr.innerHTML = `
                                 <td>${row.name}</td>
                                 <td>${row.action}</td>
                                 <td>${row.detail}</td>
                             `;
-                            tbody.appendChild(tr);
-                        });
-                    </script>
-                    <style>table {
+                        tbody.appendChild(tr);
+                    });
+                </script>
+                <style>
+                    table {
                         width: 100%;
                         border-collapse: collapse;
                     }
-                    th, td {
-                        border: 1px solid white; /* Белые границы для контраста */
+                    .table-responsive {
+    overflow-x: auto; /* Добавляет горизонтальный скролл при необходимости */
+    max-width: 100%; /* Гарантирует, что контейнер не выходит за пределы экрана */
+}
+
+
+
+                    th,
+                    td {
+                        border: 1px solid white;
+                        /* Белые границы для контраста */
                         padding: 8px;
                         text-align: left;
                     }
+
                     th {
-                        background-color: #5B8240; /* Тёмно-зелёный фон заголовка */
-                        color: white; /* Белый текст */
+                        background-color: #5B8240;
+                        /* Тёмно-зелёный фон заголовка */
+                        color: white;
+                        /* Белый текст */
                     }
+
                     td {
-                        background-color: #5B8249; /* Светло-зелёный фон */
-                        color: white; /* Белый текст */
+                        background-color: #5B8249;
+                        /* Светло-зелёный фон */
+                        color: white;
+                        /* Белый текст */
                     }
-                    </style>
-                </div>
-                
-            </section>
-            <div class="discount__data" style="padding-bottom: 35px">
-                <!-- <a href="../" class="button" style="background-color: #c0392b">Kembali</a> -->
-                <span>&nbsp&nbsp</span>
-                <a href="lab1_1.html" class="button" style="background-color: #27ae60">Зертханалық жұмысты бастау&nbsp&nbsp&nbsp</a>
+                </style>
             </div>
-            
-  
-            
-        </main>
 
-            <!--=============== SCROLL UP ===============-->
-            <a href="#" class="scrollup" id="scroll-up">
-                <i class='bx bx-up-arrow-alt scrollup__icon'></i>
-            </a>
-        
-        <!--=============== SCROLL REVEAL ===============-->
-        <script src="../assets/js/scrollreveal.min.js"></script>
+        </section>
+        <div class="discount__data" style="padding-bottom: 35px">
+            <!-- <a href="../" class="button" style="background-color: #c0392b">Kembali</a> -->
+            <span>&nbsp&nbsp</span>
+            <a href="lab1_1.html" class="button" style="background-color: #27ae60">Зертханалық жұмысты
+                бастау&nbsp&nbsp&nbsp</a>
+        </div>
 
-        <!--=============== SWIPER JS ===============-->
-        <script src="../assets/js/swiper-bundle.min.js"></script>
-        
-        <!--=============== MAIN JS ===============-->
-        <script src="../assets/js/main.js"></script>
-    </body>
+
+
+    </main>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="../assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../assets/js/main.js"></script>
+</body>
+
 </html>
