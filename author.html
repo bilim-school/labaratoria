@@ -1,97 +1,122 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
 
-        <!--=============== BOXICONS ===============-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 
-        <!--=============== SWIPER CSS ===============--> 
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-        <!--=============== CSS ===============--> 
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== MAIN CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-        <title>Selamat Kamu Berhasil</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                    <img src="assets/img/logo.png" alt="" class="nav__logo-img">
-                    Hasil
-                </a>
+    <!--=============== CUSTOM INLINE STYLES ===============-->
+    <style>
+      /* Задаем стиль для текста на странице */
+      body,
+      h1,
+      h2,
+      h3,
+      p,
+      a {
+        font-family: 'Georgia', serif;
+        color: #eed3d3;
+        line-height: 1.6;
+      }
+      
+      /* Уменьшаем размер изображения профиля */
+      .author-profile__img {
+        width: 150px; /* измените значение по желанию */
+        height: auto;
+        border-radius: 50%; /* если нужен круглый вид */
+      }
+      
+      /* Дополнительное оформление для заголовков профиля */
+      .author-profile__name {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      
+      .author-profile__bio {
+        font-size: 16px;
+      }
+    </style>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="" class="nav__link active-link">Home</a>
-                        </li>
+    <title>Биология</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img src="assets/img/logo.png" alt="Логотип" class="nav__logo-img" />
+          Биология
+        </a>
 
-                        <li class="nav__item">
-                            <a href="latihan.html" class="nav__link">Latihan Soal</a>
-                        </li>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Басты бет</a>
+            </li>
+            <li class="nav__item">
+              <a href="author.html" class="nav__link active-link">Автор</a>
+            </li>
+            <li class="nav__item">
+              <a href="labs.html" class="nav__link">Зертханалық жұмыстар</a>
+            </li>
+          </ul>
 
-                        <a href="index.html" class="button button--ghost">Virtual Lab</a>
-                    </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+          <img src="assets/img/nav-img.png" alt="Навигация суреті" class="nav__img" />
+        </div>
 
-                    <div class="nav__close" id="nav-close">
-                        <i class='bx bx-x'></i>
-                    </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
 
-                    <img src="assets/img/nav-img.png" alt="" class="nav__img">
-                </div>
+    <!--==================== MAIN CONTENT ====================-->
+    <main class="main">
+      <section class="section authors" id="authors">
+        <div class="container">
+          <h2 class="section__title">Автор</h2>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-grid-alt'></i>
-                </div>
-
-            </nav>
-        </header>
-
-        <main class="main">
-
-            
-        
-            <!--==================== DISCOUNT ====================-->
-            <section class="section discount">
-                <div class="discount__container container grid">
-                    <img src="assets/img/selamat.gif" alt="" class="discount__img">
-                    <div class="discount__data">
-                        <h2 class="discount__title">Selamat Kamu berhasil<br></h2>
-                    </div>
-                </div>
-                <div><br>
-                
-                
-            </section>
-            <div class="discount__data" style="padding-bottom: 35px">
-                <!-- <a href="../" class="button" style="background-color: #c0392b">Kembali</a>
-                <span>&nbsp&nbsp</span> -->
-                <a href="" class="button" style="background-color: #27ae60">Home&nbsp&nbsp&nbsp</a>
+          <!--==================== AUTHOR PROFILE ====================-->
+          <div class="author-profile">
+            <img src="assets/img/prof.png" alt="Автор суреті" class="author-profile__img" />
+            <div class="author-profile__info">
+              <h3 class="author-profile__name">Байдырақманова Альбина Арыстанбекқызы (магистрант)</h3>
+              <p class="author-profile__bio">
+                Мұнда автордың кәсіби тәжірибесі, шығармашылық қызметі және қызығушылықтары туралы қысқаша ақпарат беріледі.
+                Автор биология саласындағы жаңа зерттеулер мен жетістіктерді оқырмандарымен бөліседі.
+              </p>
+              <div class="author-profile__contact">
+                <p>Email: <a href="mailto:author@example.com">author@example.com</a></p>
+                <p>Телефон: +1 234 567 890</p>
+              </div>
             </div>
-            
-  
-            
-        </main>
+          </div>
+        </div>
+      </section>
+    </main>
 
-            <!--=============== SCROLL UP ===============-->
-            <a href="#" class="scrollup" id="scroll-up">
-                <i class='bx bx-up-arrow-alt scrollup__icon'></i>
-            </a>
-        
-        <!--=============== SCROLL REVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
 
-        <!--=============== SWIPER JS ===============-->
-        <script src="ssets/js/swiper-bundle.min.js"></script>
-        
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!--=============== SCRIPTS ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
